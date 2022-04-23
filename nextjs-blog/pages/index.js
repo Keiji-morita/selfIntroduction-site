@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Head from 'next/head'
 
 export default function Home() {
@@ -10,11 +9,8 @@ export default function Home() {
       </Head>
 
       <main>
-      <h1 className="title">
-        Read{' '}
-        <Link href="/posts/first-post">
-        <a>this page!</a>
-        </Link>
+        <h1 className="title">
+          Learn <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
         <p className="description">
@@ -59,7 +55,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
 
@@ -202,7 +198,6 @@ export default function Home() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
-            background: yellow;
         }
 
         * {
